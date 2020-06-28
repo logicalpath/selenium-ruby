@@ -2,6 +2,9 @@
 
 Repository of ruby selenium scripts
 
+These scripts run against a local install of Dave Haeffner's [the-internet](https://github.com/saucelabs/the-internet). I highly reccomend his [Guidebook](https://seleniumguidebook.com/) especially if you are just learning Selenium.
+
+
 Running the project:
 
 - clone the project `git clone git@github.com:logicalpath/selenium-ruby.git`
