@@ -1,17 +1,14 @@
-# qa_selenium
-
-Repository of ruby selenium scripts
+# Selenium Ruby
 
 These scripts run against a local install of Dave Haeffner's [the-internet](https://github.com/saucelabs/the-internet). I highly reccomend his [Guidebook](https://seleniumguidebook.com/) especially if you are just learning Selenium.
 
-
-Running the project:
+## Installing the project:
 
 - clone the project `git clone git@github.com:logicalpath/selenium-ruby.git`
 - cd to root directory of project (for example qa_selenium)
 - run `bundle install`
 - run `rbenv rehash` (this adds rspec to .rbenv/shims)
-- download the web drivers ([Firefox][geckodriver], [Chrome][chromedriver]) and put them in the `bin` directory of this repository
+- download the web drivers ([Firefox][geckodriver], [Chrome][chromedriver]) and put them in the `\usr\bin` directory.
 
 Environment Variables that can be set at runtime:
 
@@ -21,19 +18,19 @@ ENV['BASE_URL'] ||= 'http://localhost:9292'
 ENV['BROWSER']  ||= 'chrome'
 ENV['OPSYS'] ||= 'undefined'
 ENV['SCREENSHOTS'] ||= 'yes'
-ENV['WDRIVER_PATH'] ||= './bin/chromedriver'
+ENV['WDRIVER_PATH'] ||= '<path if different from \usr\bin>'
 ```
 
-Set `ENV['WDRIVER_PATH']` to the path of the webdriver binary.
-`ENV['BROWSER']` will determine which driver to append to the `WDRIVER_PATH`:
+`ENV['BROWSER']` will determine which driver to append to the `WDRIVER_PATH`.
 
+## Executing the scripts
+
+From the command line, run `rspec`
 e.g.
 
 ```
-$ WDRIVER_PATH="./bin/chromedriver" BROWSER="chrome" bundle exec rspec -r ./config/local.rb
+$ bundle exec rspec -r ./config/local.rb
 ```
-
-I would recommend putting your selenium drivers in the empty `bin` directory of this repository so it's easy to access.
 
 ## Linter
 
