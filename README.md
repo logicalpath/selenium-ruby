@@ -25,8 +25,7 @@ ENV['WDRIVER_PATH'] ||= '<path if different from \usr\bin>'
 
 ## Executing the scripts
 
-From the command line, run `rspec`
-e.g.
+From the command line, run `rspec`:
 
 ```
 $ bundle exec rspec -r ./config/local.rb
