@@ -5,7 +5,7 @@ These scripts run against a local install of Dave Haeffner's [the-internet](http
 ## Installing the project:
 
 - clone the project `git clone git@github.com:logicalpath/selenium-ruby.git`
-- cd to root directory of project (for example qa_selenium)
+- cd to root directory of project (selenium_ruby)
 - run `bundle install`
 - run `rbenv rehash` (this adds rspec to .rbenv/shims)
 - download the web drivers ([Firefox][geckodriver], [Chrome][chromedriver]) and put them in the `\usr\bin` directory.
