@@ -10,8 +10,8 @@ ENV['BROWSER']  ||= 'chrome'
 # ENV['BROWSER']  ||= 'firefox'
 ENV['OPSYS'] ||= 'undefined'
 ENV['SCREENSHOTS'] ||= 'yes'
-ENV['WDRIVER_PATH'] ||= '/usr/bin/chromedriver'
-# ENV['WDRIVER_PATH'] ||= '/usr/bin/geckodriver'
+ENV['WDRIVER_PATH'] ||= '/usr/local/bin/chromedriver'
+# ENV['WDRIVER_PATH'] ||= '/usr/local/bin/geckodriver'
 
 #
 #   Determine OS

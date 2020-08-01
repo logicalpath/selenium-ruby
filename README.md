@@ -8,7 +8,7 @@ These scripts run against a local install of Dave Haeffner's [the-internet](http
 - cd to root directory of project (selenium_ruby)
 - run `bundle install`
 - run `rbenv rehash` (this adds rspec to .rbenv/shims)
-- download the web drivers ([Firefox][geckodriver], [Chrome][chromedriver]) and put them in the `\usr\bin` directory.
+- download the web drivers ([Firefox][geckodriver], [Chrome][chromedriver]) and place them in a directory.
 
 Environment Variables that can be set at runtime:
 
@@ -18,7 +18,7 @@ ENV['BASE_URL'] ||= 'http://localhost:9292'
 ENV['BROWSER']  ||= 'chrome'
 ENV['OPSYS'] ||= 'undefined'
 ENV['SCREENSHOTS'] ||= 'yes'
-ENV['WDRIVER_PATH'] ||= '<path if different from \usr\bin>'
+ENV['WDRIVER_PATH'] ||= '<path to the drivers>'
 ```
 
 `ENV['BROWSER']` will determine which driver to append to the `WDRIVER_PATH`.
